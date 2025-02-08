@@ -51,3 +51,13 @@ variable "playbook_repository" {
   type        = string
   description = "(Required) URI of the playbook repository"
 }
+
+variable "ec2_role_name" {
+  type        = string
+  description = "(Required) Name of the IAM role to attach to the EC2 instance."
+}
+
+variable "api_key_secret_id" {
+  type        = string
+  description = "(Required) Secret ID for the API key."
+}
